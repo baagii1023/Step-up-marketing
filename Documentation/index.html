@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!--SEO Meta Tags-->
+    <meta charset="utf-8" />
+    <!-- SITE TITLE -->
+    <title>Evea - Responsive App Landing Page Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="">
+    <meta name="author" content="Zoyothemes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+	<!-- Google-Fonts -->
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+
+	<!-- Bootstrap Core CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	<!-- Custom CSS -->
+	<link href="css/styles.css" rel="stylesheet" />
+
+</head>
+
+<body>
+	<nav class="navbar navbar-default sticky-top">
+		<div class="container-fluid">
+			<div class="text-center">
+				<a class="logo" href="#">Evea - Responsive App Landing Page Template Documentation 1.0</a>
+			</div>
+		</div>
+	</nav>
+
+	<div id="wrapper">
+		<div id="sidebar-wrapper">
+			<ul class="sidebar-nav">
+				<li><a href="#intro">Introduction</a></li>
+				<li><a href="#setup">Setup HTML</a></li>
+				<li><a href="#structure">Structure</a></li>
+				<li><a href="#credits">Plugins &amp; Resources (Credits)</a></li>
+				<li><a href="#support">Support</a></li>
+				<li><a href="#changelog">Change Log</a></li>
+			</ul>
+		</div>
+
+		<!-- Page Content -->
+		<div id="page-content-wrapper">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="right-bar ml-3">
+							<div  class="com-container">
+								<h4 class="page-header">Introduction</h4>
+								<p>Introducing <strong>Evea</strong> is a fully responsive App Landing template built using the latest Tailwind css v3.3.3 It’s designed to describe your app, agency, or business. The clean and well-commented code allows you to easily customize it. You can simply update its contents, images, and scss according to your company info. Appoo has 6 different types of layouts with Admin Dashboard and UI Components which are quite enough for your business.
+									With a foundation in contemporary web technologies such as <strong class="text-danger">HTML5, SCSS, Javascript, Gulp </strong>and <strong class="text-danger">Yarn</strong>. Evea ensures a seamless and dynamic user experience. It’s built with the latest version of Tailwind CSS (v3.3.3) along with HTML5, SCSS, and CSS3, making it fully responsive.
+								</p>
+								<p class="pt-3">
+									This documentation is guidelines for all users who can even be a beginner or experienced web developer.
+								</p>
+								<p>
+									Please feel free to get back to us via email <code>zoyothemes.com</code>
+								</p>
+
+
+								<div class="section-title mb-4" id="setup">
+									<h4 class="page-header">Setup HTML</h4>
+	
+									<h5 class="mt-4">Introduction</h5>
+									<p class="text-muted mb-0">We are using <a href="https://gulpjs.com/" class="text-primary font-weight-bold" target="_blank">gulp</a> which allows having complete automation for build flow. In case if you don't know Gulp then it's easy to use it. Gulp is a toolkit for automating painful or time-consuming tasks in the development workflow, so you can stop messing around while building any project. You can read it more about it <a href="https://gulpjs.com/" class="text-primary font-weight-bold" target="_blank">here</a>. Please follow below steps to install and setup all prerequisites:</p>
+	
+									<h5 class="mt-4">Prerequisites</h5>
+									<p class="text-muted mb-0">Please follow below steps to install and setup all prerequisites:</p>
+	
+									<ul class="list-unstyled mt-3">
+										<li class="d-flex">
+											<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right mt-1"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+											<div class="ml-2">
+												<h6>Yarn</h6>
+												<p class="text-muted">Make sure to have the <a href="https://classic.yarnpkg.com/en/" class="text-primary font-weight-bold" target="_blank">Yarn</a> installed & running in your computer. If you already have installed Yarn on your computer, you can skip this step. We suggest you to use Yarn instead of NPM.</p>
+											</div>
+										</li>
+	
+										<li class="d-flex">
+											<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right mt-1"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+											<div class="ml-2">
+												<h6>Nodejs</h6>
+												<p class="text-muted">Make sure to have the <a href="https://nodejs.org/" class="text-primary font-weight-bold" target="_blank">Node.js</a> installed & running in your computer. If you already have installed Node on your computer, you can skip this step if your existing node version is greater than 16.</p>
+											</div>
+										</li>
+	
+										<li class="d-flex">
+											<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right mt-1"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+											<div class="ml-2">
+												<h6>Gulp</h6>
+												<p class="text-muted">Make sure to have the <a href="https://gulpjs.com/" class="text-primary font-weight-bold" target="_blank">Gulp</a> installed & running in your computer. If you already have installed gulp on run command npm install -g gulp from your terminal.</p>
+											</div>
+										</li>
+	
+										<li class="d-flex">
+											<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right mt-1"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+											<div class="ml-2">
+												<h6>Git</h6>
+												<p class="text-muted">Make sure to have the <a href="https://git-scm.com/" class="text-primary font-weight-bold" target="_blank">Git</a> installed globally & running on your computer. If you already have installed git on your computer, you can skip this step.</p>
+											</div>
+										</li>
+									</ul>
+	
+									<h5 class="mt-4">Installation</h5>
+									<p class="text-muted mb-0">To setup the admin theme, follow below-mentioned steps:</p>
+	
+									<ul class="list-unstyled mt-3">
+										<li class="d-flex">
+											<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right mt-1"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+											<div class="ml-2">
+												<h6>Install Prerequisites</h6>
+												<p class="text-muted">Make sure to have all above prerequisites installed & running on your computer</p>
+											</div>
+										</li>
+									</ul>
+	
+									<p class="text-muted mb-4">After you finished with the above steps, you can run the following commands into the terminal / command prompt from the root directory of the project to run the project locally or build for production use:</p>
+	
+									<table class="table table-bordered m-0">
+										<thead>
+											<tr>
+												<th style="width: 20%;"><i class="ti-file"></i> Command</th>
+												<th>Description</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>
+													<code>yarn install</code>
+												</td>
+												<td>
+													This would install all the required dependencies in the <code>node_modules</code> folder.
+												</td>
+											</tr>
+		
+											<tr>
+												<td>
+													<code>gulp</code>
+												</td>
+												<td>
+													Runs the project locally, starts the development server and watches for any changes in your code, including your HTML, javascript, sass, etc. The development server is accessible at <a href="http://localhost:3000" class="text-primary font-weight-bold" target="_blank">http://localhost:3000</a>.
+												</td>
+											</tr>
+		
+											<tr>
+												<td>
+													<code>gulp build</code>
+												</td>
+												<td>
+													Generates a <code>/dist</code> directory with all the production files.
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+
+								<div class="com-container" id="structure">
+									<h4 class="page-header">Structure</h4>
+									<p>I have tried to follow the standards and modular structure while developing the theme. Following sections are explaining the theme File &amp; Folder, structure, html file struture and plugins.</p>
+
+									<div class="row">
+										<div class="col-sm-12 mt-4">
+											<pre class="prettyprint">
+
+├── Documentation
+└── HTML
+├── dist folder
+├── src folder
+│   └── assets
+│   │   └── css
+│   │   └── fonts
+│   │   └── images
+│   │   └── js
+│   │   └── php
+│   │   └── scss
+│   │   │	└── custom
+│   │   │	│	└── pages
+│   │   │	│	│	└── _helper.scss
+│   │   │	└── _fonts.scss
+│   │   │	└── _general.scss
+│   └── partials
+│   │   └── All partials Files
+│   └──  All HTML Files (16+ Files)
+├── gulpfile.js
+├── package.json
+├── tailwind.config.js
+└── README.md
+</pre>
+
+										<div class="row">
+											<div class="col-sm-12 p-t-30">
+											<h4>CSS</h4>
+											<hr/>
+											
+											<p class="m-t-20">Files are explained below: </p>
+
+											<table class="table table-bordered m-0">
+												<thead>
+													<tr>
+														<th style="width: 20%;"><i class="ti-file"></i> File</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>
+															<code>CSS</code>
+														</td>
+														<td>
+															You use the icons.css and tailwind.css.
+														</td>
+													</tr>
+
+													<tr>
+														<td>
+															<code>style.css</code>
+														</td>
+														<td>
+															This file is containing all common styles for all the pages.
+														</td>
+													</tr>
+													
+
+												</tbody>
+											</table>
+											
+										</div>
+										</div>
+									</div>
+
+									<div class="col-sm-12 p-t-30">
+										<h4>Javascript</h4>
+										<hr/>
+
+										<p class="m-t-20">Files are explained below: </p>
+
+										<table class="table table-bordered m-0">
+											<thead>
+												<tr>
+													<th style="width: 20%;"><i class="ti-file"></i> File</th>
+													<th>Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												
+												<tr>
+													<td>
+														<code>app.js</code>
+													</td>
+													<td>
+														This is a main js file. All important javascript like page loader, menu, sticky menu, menu-toggler, one page menu etc.
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<code>plugins.init.js</code>
+													</td>
+													<td>
+														All init js like working tiny slider, counter, countdown, lightbox, gallery, wow animation, typed text, back button, contact js etc.
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+									
+
+
+									<div id="credits" class="com-container">
+										<h4 class="page-header">Credits & Official Documentation</h4>
+										<p>We've used the following resources as listed. These are some awesome creation and we are thankful to the community.</p>
+
+										<ul class="list-unstyled">
+											<li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right text-success mr-2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg><a href="https://classic.yarnpkg.com/en/" rel="nofollow" class="text-dark h6" target="_blank">Yarn Js</a></li>
+											<li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right text-success mr-2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg><a href="https://gulpjs.com/" rel="nofollow" class="text-dark h6" target="_blank">Gulp Js</a></li>
+											<li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right text-success mr-2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg><a href="https://nodejs.org/en/" rel="nofollow" class="text-dark h6" target="_blank">Nodejs.</a></li>
+											<li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right text-success mr-2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg><a href="https://git-scm.com/" rel="nofollow" class="text-dark h6" target="_blank">Git</a></li>
+											<li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right text-success mr-2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg><a href="https://tailwindcss.com/" rel="nofollow" class="text-dark h6" target="_blank">Tailwind css</a></li>
+											<li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right text-success mr-2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg><a href="https://fonts.google.com/" rel="nofollow" class="text-dark h6" target="_blank">Google Fonts</a></li>
+											<li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right text-success mr-2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg><a href="https://www.freepik.com/home" rel="nofollow" class="text-dark h6" target="_blank">Freepic Images</a></li>
+											<li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right text-success mr-2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg><a href="https://www.npmjs.com/package/gumshoejs" rel="nofollow" class="text-dark h6" target="_blank">Gumshoe js</a></li>
+											<li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right text-success mr-2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg><a href="https://lucide.dev/" rel="nofollow" class="text-dark h6" target="_blank">Lucide</a></li>
+											<li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right text-success mr-2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg><a href="https://preline.co/" rel="nofollow" class="text-dark h6" target="_blank">Preline</a></li>
+											<li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right text-success mr-2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg><a href="https://swiperjs.com/" rel="nofollow" class="text-dark h6" target="_blank">Swiper</a></li>
+											<li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right text-success mr-2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg><a href="https://www.npmjs.com/package/shufflejs" rel="nofollow" class="text-dark h6" target="_blank">Shufflejs</a></li>
+										</ul>
+									</div>
+
+									<div id="support" class="com-container">
+										<h4 class="page-header">Support</h4>
+										<p class="m-t-20">
+												Once again thank you for your purchase. I'll be happy to answer the the questions you have related to the theme.
+												In case if you have any suggestion or feature, request please feel free to contact me, I'll try to implement it and will release as part of future updates.
+											</p>
+
+											<p>
+												Stay Awesome!
+											</p>
+
+											<p class="text-primary">
+												<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right text-primary mr-2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg><strong>Zoyothemes</strong>
+											</p>
+									</div>
+
+									<div id="changelog" class="com-container">
+
+										<h4 class="page-header">Changelog</h4>
+
+										<p style="margin-top: 20px;"><span  style="text-decoration: underline; font-weight: 600;">Version 1.0.0 </span> &nbsp;&nbsp;&nbsp;<small class="text-muted"> 5th April 2024</small></p>
+										
+										<ul>
+											<li>
+												Initial released
+											</li>
+										</ul>
+
+									</div>
+
+								</div>
+							</div>
+						</div>
+
+						<!-- Thankyou Start -->
+						<section class="py-3 navbar-default">
+							<div class="container mt-lg-0 mt-2">
+								<div class="row justify-content-center">
+									<div class="col-12">
+										<div class="text-center">
+											<h5 class="text-white mb-0">Thank you very much for your purchase !</h5>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<!-- Thankyou End -->
+						
+						<div class="text-center">
+							<p class="mb-0 copy">© <script>document.write(new Date().getFullYear())</script> Zoyothemes. Design with <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ff0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart text-danger"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg> by <a href="https://zoyothemes.com/" target="_blank" class="text-reset">Zoyothemes</a>.</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script src="js/jquery.easing.min.js"></script>
+	
+	<script src="js/scrollspy.min.js"></script>
+
+	<!-- Custom -->
+	<script src="js/app.js"></script>
+
+	</body>
+</html>
