@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include("partials/title-meta.html", {"title": "Evea"})
+
+    @@include("partials/head-css.html")
+</head>
+
+<body>
+
+    <!-- Navbar Start -->
+    <nav class="navbar fixed top-0 start-0 end-0 z-999 transition-all duration-500 py-5 items-center shadow-md lg:shadow-none [&.is-sticky]:bg-white group [&.is-sticky]:shadow-md bg-white lg:bg-transparent" id="navbar">
+        <div class="container">
+            
+            <div class="flex lg:flex-nowrap flex-wrap items-center">
+    
+                <a href="index-1.html" class="flex items-center">
+                    <img src="assets/images/logo.png" class="h-9 flex">
+                </a>
+    
+                <div class="lg:hidden flex items-center ms-auto px-2.5">
+                    <button class="hs-collapse-toggle" type="button" id="hs-unstyled-collapse" data-hs-collapse="#navbarCollapse">
+                        <i data-lucide="menu" class="h-8 w-8 text-black"></i>
+                    </button>
+                </div>
+    
+                <div class="navigation hs-collapse transition-all duration-300 lg:basis-auto basis-full grow hidden items-center justify-center lg:flex mx-auto overflow-hidden mt-6 lg:mt-0 nav-light" id="navbarCollapse">
+                    <ul class="navbar-nav flex-col lg:flex-row gap-y-2 flex lg:items-center justify-center" id="navbar-navlist">
+                        <li class="nav-item mx-1.5 transition-all text-dark lg:text-black group-[&.is-sticky]:text-dark all duration-300 hover:text-primary [&.active]:!text-primary group-[&.is-sticky]:[&.active]:text-primary">
+                            <a class="nav-link inline-flex items-center text-sm lg:text-base font-medium py-0.5 px-2 capitalize" href="#home">Home</a>
+                        </li>
+    
+                        <li class="nav-item mx-1.5 transition-all text-dark lg:text-black group-[&.is-sticky]:text-dark duration-300 hover:text-primary [&.active]:!text-primary group-[&.is-sticky]:[&.active]:text-primary">
+                            <a class="nav-link inline-flex items-center text-sm lg:text-base font-medium py-0.5 px-2 capitalize" href="#demo">Demo</a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="ms-auto shrink hidden lg:inline-flex gap-2">
+                    <a href="#" class="py-2 px-6 inline-flex items-center gap-2 rounded-md text-base text-white bg-primary hover:bg-primaryDark transition-all duration-500 font-medium">
+                        <i data-lucide="download-cloud" class="h-4 w-4 fill-white/40"></i>
+                        <span class="hidden sm:block">Download</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- =========== Hero Section Start =========== -->
+    <section class="relative pt-32 pb-32 overflow-x-hidden bg-[url(../images/bg-demo.jpg)] bg-no-repeat bg-cover" id="home">
+        <div class="container">
+
+            <div class="grid grid-cols-1 gap-6 items-center justify-center">
+                <div class="text-sm py-20 px-10 text-center max-w-xl mx-auto">
+                    <h1 class="text-4xl text-dark tracking-normal leading-normal font-bold mb-4 mt-6">Evea - <span class="text-primary">App Landing</span> Template With Tailwind</h1>
+                    <h4 class="text-xl text-dark tracking-normal leading-normal font-bold mb-4 mt-4"><span class="text-primary">6</span> Homepages </h4>
+                </div>
+            </div>
+
+            <div class="text-center mt-16">
+
+                <div class="inline-flex flex-wrap items-center justify-center gap-4">
+                    <div class="w-16 h-16 flex justify-center items-center rounded-md bg-white">
+                        <img src="assets/images/frame/tailwind.png" class="w-9 h-9">
+                    </div>
+                    <div class="w-16 h-16 flex justify-center items-center rounded-md bg-white">
+                        <img src="assets/images/frame/html.svg" class="w-9 h-9">
+                    </div>
+                    <div class="w-16 h-16 flex justify-center items-center rounded-md bg-white">
+                        <img src="assets/images/frame/css.svg" class="w-9 h-9">
+                    </div>
+                    <div class="w-16 h-16 flex justify-center items-center rounded-md bg-white">
+                        <img src="assets/images/frame/javascript.svg" class="w-9 h-9">
+                    </div>
+                    <div class="w-16 h-16 flex justify-center items-center rounded-md bg-white">
+                        <img src="assets/images/frame/scss2.png" class="w-9 h-9">
+                    </div>
+                    <div class="w-16 h-16 flex justify-center items-center rounded-md bg-white">
+                        <img src="assets/images/frame/yarn.png" class="w-9 h-9">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="relative">
+        <div class="shape absolute sm:-bottom-px -bottom-[2px] start-0 end-0 overflow-hidden z-1 text-white">
+            <svg class="w-full h-auto scale-[2.0] origin-top" viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+            </svg>
+        </div>
+    </div>
+
+    <!-- Demo Start -->
+     <section class="section py-20" id="demo">
+        <div class="container">
+            <div class="mx-10">
+                <div class="text-2xl text-center font-semibold mb-10 text-primary"> Template Demo</div>
+
+                <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-10 justify-center items-center">
+
+                    <a class='group' href='index-1.html' target='_blank'>
+                        <div class="rounded-xl overflow-hidden border border-gray-200">
+                            <img src="assets/images/demo/bg-1.png" class="rounded transition-all duration-500 shadow group-hover:shadow-sm group-hover:scale-110" alt="work-image">
+                        </div>
+                        <h4 class="text-lg text-center mt-4">Layout - 1</h4>
+                    </a>
+    
+                    <a class='group' href='index-2.html' target='_blank'>
+                        <div class="rounded-xl overflow-hidden border border-gray-200">
+                            <img src="assets/images/demo/bg-2.png" class="rounded transition-all duration-500 shadow group-hover:shadow-sm group-hover:scale-110" alt="work-image">
+                        </div>
+                        <h4 class="text-lg text-center mt-5">Layout - 2</h4>
+                    </a>
+                    
+                    <a class='group' href='index-3.html' target='_blank'>
+                        <div class="rounded-xl overflow-hidden border border-gray-200">
+                            <img src="assets/images/demo/bg-3.png" class="rounded transition-all duration-500 shadow group-hover:shadow-sm group-hover:scale-110" alt="work-image">
+                        </div>
+                        <h4 class="text-lg text-center mt-5">Layout - 3</h4>
+                    </a>
+            
+                    <a class='group' href='index-4.html' target='_blank'>
+                        <div class="rounded-xl overflow-hidden border border-gray-200">
+                            <img src="assets/images/demo/bg-4.png" class="rounded transition-all duration-500 shadow group-hover:shadow-sm group-hover:scale-110" alt="work-image">
+                        </div>
+                        <h4 class="text-lg text-center mt-5">Layout - 4</h4>
+                    </a>            
+    
+                    <a class='group' href='index-5.html' target='_blank'>
+                        <div class="rounded-xl overflow-hidden border border-gray-200">
+                            <img src="assets/images/demo/bg-5.png" class="rounded transition-all duration-500 shadow group-hover:shadow-sm group-hover:scale-110" alt="work-image">
+                        </div>
+                        <h4 class="text-lg text-center mt-5">Layout - 5</h4>
+                    </a>
+                    
+                    <a class='group' href='index-6.html' target='_blank'> 
+                        <div class="rounded-xl overflow-hidden border border-gray-200">
+                            <img src="assets/images/demo/bg-6.png" class="rounded transition-all duration-500 shadow group-hover:shadow-sm group-hover:scale-110" alt="work-image">
+                        </div>
+                        <h4 class="text-lg text-center mt-5">Layout - 6</h4>        
+                    </a>
+
+                    <div class="lg:col-span-2">
+                        <div class="flex justify-center">
+                            <div class="lg:w-1/2">
+                                <a class='group' href='index-7.html' target='_blank'>
+                                    <div class="rounded-xl overflow-hidden border border-gray-200">
+                                        <img src="assets/images/demo/bg-7.png" class="rounded transition-all duration-500 shadow group-hover:shadow-sm group-hover:scale-110" alt="work-image">
+                                    </div>
+                                    <h4 class="text-lg text-center mt-5">Layout - 7</h4>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--- Demo End --->
+
+    <footer class="relative  bg-[url(../images/bg-demo.jpg)] bg-no-repeat bg-cover">
+        <div class="pt-20 pb-10" data-aos="fade-up" data-aos-duration="1000">
+            <div class="container relative">
+                <div class="text-center">
+                    <div class=" mx-auto mb-12">
+                        <a class="flex items-center justify-center" href="#">
+                            <img class="h-10" src="assets/images/logo.png">
+                        </a>
+                        <h2 class="md:text-4xl text-xl font-semibold text-default-900 capitalize my-5">Get Evea for now</h2>
+                        <p class="font-normal text-lg max-w-sm mx-auto text-muted">Start Openup today and create your stunning app website!</p>
+                    </div>
+
+                    <a class="py-2 px-6 inline-flex items-center gap-2 rounded-md text-base text-white bg-primary hover:bg-primaryDark transition-all duration-500 font-medium" href="#"><i class="h-5 w-5" data-lucide="shopping-cart"></i> Purchase Now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container relative">
+            <p class="py-6 text-center font-medium text-base text-default-900">
+                <script>document.write(new Date().getFullYear().toString());
+                </script>
+                © Evea.
+                Crafted and Coded with <span class="text-red-500">❤️</span> by <a class="text-primary-700" href="https://zoyothemes.com/" target="_blank">Zoyothemes</a>
+            </p>
+        </div>
+    </footer>
+
+    @@include("partials/back-to-top.html")
+
+    @@include("partials/script-file.html")
+
+    </body>
+</html>

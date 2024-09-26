@@ -1,0 +1,25 @@
+/* 
+Template Name: Evea - Responsive App Landing Tailwind CSS Template
+Version: 1.0.0
+Author: Zoyothemes
+Email: zoyothemes@gmail.com
+File: Main Css File
+*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Font
+@import "custom/fonts";
+
+// general
+@import "custom/general";
+
+// components
+@import "components/buttons";
+
+// pages
+@import "custom/pages/helper";
+
+
