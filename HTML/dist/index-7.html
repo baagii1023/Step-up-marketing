@@ -945,39 +945,66 @@
 
                 <div class="lg:col-span-2 lg:ms-24">
                     <div class="p-6 md:p-12 rounded-md shadow-lg bg-white">
-                        <form>
-                            <div class="grid sm:grid-cols-2 gap-6">
-                                <div>
-                                    <label for="formFirstName" class="block text-sm/normal font-semibold text-black mb-2">First Name</label>
-                                    <input type="text" class="block w-full text-sm rounded-md py-3 px-4 border-gray-200 focus:border-gray-300 focus:ring-transparent" id="formFirstName" placeholder="Your first name..." required="">
-                                </div>
-
-                                <div>
-                                    <label for="formLastName" class="block text-sm/normal font-semibold text-black mb-2">Last Name</label>
-                                    <input type="text" class="block w-full text-sm rounded-md py-3 px-4 border-gray-200 focus:border-gray-300 focus:ring-transparent" id="formLastName" placeholder="Last first name..." required="">
-                                </div>
-
-                                <div>
-                                    <label for="formEmail" class="block text-sm/normal font-semibold text-black mb-2">Email Address</label>
-                                    <input type="email" class="block w-full text-sm rounded-md py-3 px-4 border-gray-200 focus:border-gray-300 focus:ring-transparent" id="formEmail" placeholder="Your email..." required="">
-                                </div>
-
-                                <div>
-                                    <label for="formPhone" class="block text-sm/normal font-semibold text-black mb-2">Phone Number</label>
-                                    <input type="text" class="block w-full text-sm rounded-md py-3 px-4 border-gray-200 focus:border-gray-300 focus:ring-transparent" id="formPhone" placeholder="Type phone number..." required="">
-                                </div>
-
-                                <div class="sm:col-span-2">
-                                    <div class="mb-4">
-                                        <label for="formMessages" class="block text-sm/normal font-semibold text-black mb-2">Messages</label>
-                                        <textarea class="block w-full text-sm rounded-md py-3 px-4 border-gray-200 focus:border-gray-300 focus:ring-transparent" id="formMessages" rows="4" placeholder="Type messages..." required=""></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="mt-4">
-                                <button type="submit" class="py-2 px-6 rounded-md text-baseitems-center justify-center border border-primary text-white bg-primary hover:bg-primaryDark transition-all duration-500 font-medium">Send Messages <i class="mdi mdi-send ms-1"></i></button>
-                            </div>
-                        </form>
+											<form id="contactForm">
+												<div class="grid sm:grid-cols-2 gap-6">
+														<div>
+																<label for="formFirstName" class="block text-sm/normal font-semibold text-black mb-2">First Name</label>
+																<input type="text" class="block w-full text-sm rounded-md py-3 px-4 border-gray-200 focus:border-gray-300 focus:ring-transparent" id="formFirstName" placeholder="Your first name..." required="">
+														</div>
+														<div>
+																<label for="formLastName" class="block text-sm/normal font-semibold text-black mb-2">Last Name</label>
+																<input type="text" class="block w-full text-sm rounded-md py-3 px-4 border-gray-200 focus:border-gray-300 focus:ring-transparent" id="formLastName" placeholder="Last first name..." required="">
+														</div>
+														<div>
+																<label for="formEmail" class="block text-sm/normal font-semibold text-black mb-2">Email Address</label>
+																<input type="email" class="block w-full text-sm rounded-md py-3 px-4 border-gray-200 focus:border-gray-300 focus:ring-transparent" id="formEmail" placeholder="Your email..." required="">
+														</div>
+														<div>
+																<label for="formPhone" class="block text-sm/normal font-semibold text-black mb-2">Phone Number</label>
+																<input type="text" class="block w-full text-sm rounded-md py-3 px-4 border-gray-200 focus:border-gray-300 focus:ring-transparent" id="formPhone" placeholder="Type phone number..." required="">
+														</div>
+														<div class="sm:col-span-2">
+																<div class="mb-4">
+																		<label for="formMessages" class="block text-sm/normal font-semibold text-black mb-2">Messages</label>
+																		<textarea class="block w-full text-sm rounded-md py-3 px-4 border-gray-200 focus:border-gray-300 focus:ring-transparent" id="formMessages" rows="4" placeholder="Type messages..." required=""></textarea>
+																</div>
+														</div>
+												</div>
+												<div class="mt-4">
+														<button type="submit" class="py-2 px-6 rounded-md text-baseitems-center justify-center border border-primary text-white bg-primary hover:bg-primaryDark transition-all duration-500 font-medium">Send Messages <i class="mdi mdi-send ms-1"></i></button>
+												</div>
+										</form>
+										
+										<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+										<script>
+										(function() {
+												emailjs.init(
+													"pz2ERoSFjRcnKZddc"); // Replace with your actual EmailJS public key
+										})();
+										
+										document.getElementById('contactForm').addEventListener('submit', function(event) {
+												event.preventDefault(); // Prevent form from reloading the page
+										
+												// Get the form data
+												const formData = {
+														firstName: document.getElementById('formFirstName').value,
+														lastName: document.getElementById('formLastName').value,
+														email: document.getElementById('formEmail').value,
+														phone: document.getElementById('formPhone').value,
+														message: document.getElementById('formMessages').value,
+												};
+										
+												// Send the email using EmailJS
+												emailjs.send('service_fj96yrh', 'template_ik84d1i', formData)
+														.then(function(response) {
+																console.log('SUCCESS!', response.status, response.text);
+																alert('Message sent successfully!');
+														}, function(error) {
+																console.log('FAILED...', error);
+																alert('Failed to send message: ' + error.text); // Show the error message
+														});
+										});
+										</script>
                     </div>
                 </div>
             </div>
@@ -1110,6 +1137,10 @@
 
     <!-- Main App Js -->
     <script src="assets/js/app.js" ></script>
+
+    <!-- email Js -->
+    <script defer src="assets/js/email.js"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
     </body>
 </html>
