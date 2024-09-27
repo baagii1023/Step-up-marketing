@@ -968,6 +968,9 @@ select{
 .h-full{
   height: 100% !important;
 }
+.h-\[750px\]{
+  height: 750px !important;
+}
 .w-10{
   width: 2.5rem !important;
 }
@@ -1372,6 +1375,18 @@ select{
 }
 .stroke-2{
   stroke-width: 2 !important;
+}
+.object-contain{
+  -o-object-fit: contain !important;
+     object-fit: contain !important;
+}
+.object-cover{
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
+}
+.object-fill{
+  -o-object-fit: fill !important;
+     object-fit: fill !important;
 }
 .p-1{
   padding: 0.25rem !important;
