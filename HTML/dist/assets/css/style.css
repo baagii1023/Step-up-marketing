@@ -1373,6 +1373,10 @@ select{
 .stroke-2{
   stroke-width: 2 !important;
 }
+.object-cover{
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
+}
 .p-1{
   padding: 0.25rem !important;
 }
