@@ -3,7 +3,7 @@
    Email: zoyothemes@gmail.com
    Website: https://zoyothemes.com
    Version: 1.0.0
-   Created: March 2024
+   Created: April 2024
    File Description: Main JS file of the template
 */
 
