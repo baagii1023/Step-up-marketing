@@ -1,27 +1,21 @@
-// // Initialize EmailJS
-// (function() {
-//   emailjs.init("baagii1993@yahoo.com");  // Replace with your actual EmailJS user ID
-// })();
+document.getElementById('contactForm').addEventListener('submit', function (event) {
+	event.preventDefault(); // Prevent form from reloading the page
 
-// document.getElementById('contactForm').addEventListener('submit', function(event) {
-//   event.preventDefault(); // Prevent form from reloading the page
-
-//   // Get the form data
-//   const formData = {
-//     firstName: document.getElementById('formFirstName').value,
-//     lastName: document.getElementById('formLastName').value,
-//     email: document.getElementById('formEmail').value,
-//     phone: document.getElementById('formPhone').value,
-//     message: document.getElementById('formMessages').value,
-//   };
-
-//   // Send the email using EmailJS
-//   emailjs.send('service_fj96yrh', 'template_ik84d1i', formData)
-//     .then(function(response) {
-//       console.log('SUCCESS!', response.status, response.text);
-//       alert('Message sent successfully!');
-//     }, function(error) {
-//       console.log('FAILED...', error);
-//       alert('Failed to send message.');
-//     });
-// });
+	// Send the form data to Formspree
+	fetch(this.action, {
+			method: this.method,
+			body: new FormData(this),
+			headers: {
+					'Accept': 'application/json'
+			}
+	}).then(response => {
+			if (response.ok) {
+					alert('Message sent successfully!');
+					this.reset(); // Reset the form
+			} else {
+					alert('Failed to send message. Please try again.');
+			}
+	}).catch(error => {
+			alert('Error: ' + error);
+	});
+});
