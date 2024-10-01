@@ -968,12 +968,6 @@ select{
 .h-full{
   height: 100% !important;
 }
-.h-\[1280\]{
-  height: 1280 !important;
-}
-.h-\[1280px\]{
-  height: 1280px !important;
-}
 .w-10{
   width: 2.5rem !important;
 }
@@ -1013,18 +1007,12 @@ select{
 .w-\[calc\(100\%-2rem\)\]{
   width: calc(100% - 2rem) !important;
 }
-.w-fit{
-  width: -moz-fit-content !important;
-  width: fit-content !important;
-}
 .w-full{
   width: 100% !important;
 }
-.w-\[1920\]{
-  width: 1920 !important;
-}
-.w-\[1920px\]{
-  width: 1920px !important;
+.w-fit{
+  width: -moz-fit-content !important;
+  width: fit-content !important;
 }
 .max-w-2xl{
   max-width: 42rem !important;
