@@ -1007,12 +1007,11 @@ select{
 .w-\[calc\(100\%-2rem\)\]{
   width: calc(100% - 2rem) !important;
 }
+.w-auto{
+  width: auto !important;
+}
 .w-full{
   width: 100% !important;
-}
-.w-fit{
-  width: -moz-fit-content !important;
-  width: fit-content !important;
 }
 .max-w-2xl{
   max-width: 42rem !important;
